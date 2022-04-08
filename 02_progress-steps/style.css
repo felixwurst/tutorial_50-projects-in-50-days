@@ -91,8 +91,8 @@ body {
 }
 
 .btn:focus {
-  /* outline: 0; */
-  outline: 5px dotted green;
+  outline: 0;
+  /* outline: 5px dotted green; */
 }
 
 .btn:disabled {
