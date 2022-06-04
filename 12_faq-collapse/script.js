@@ -1,8 +1,7 @@
-const toggleBtns = document.querySelectorAll('.faq-toggle');
+const toggles = document.querySelectorAll('.faq-toggle');
 
-toggleBtns.forEach(btn => {
-  // console.log(btn);
-  btn.addEventListener('click', event => {
-    console.log('click');
+toggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    toggle.parentNode.classList.toggle('active');
   });
 });
