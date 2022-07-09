@@ -14,8 +14,9 @@ body {
 
 .kinetic {
   position: relative;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
+  /* background-color: black; */
 }
 
 .kinetic::after,
