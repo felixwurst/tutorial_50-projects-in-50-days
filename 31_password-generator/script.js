@@ -34,6 +34,7 @@ generateEl.addEventListener('click', () => {
 
 function generatePassword(lower, upper, number, symbol, length) {
   let generatedPassword = '';
+
   const typesCount = lower + upper + number + symbol;
   const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(
     item => Object.values(item)[0]
@@ -45,11 +46,12 @@ function generatePassword(lower, upper, number, symbol, length) {
 
   for (let i = 0; i < length; i += typesCount) {
     typesArr.forEach(type => {
-      // console.log(type);
-      const funcName = Object.keys(type);
-      console.log(funcName);
+      const funcName = Object.keys(type)[0];
+      generatedPassword += randomFunc[funcName]();
     });
   }
+
+  return generatedPassword.slice(0, length);
 }
 
 function getRandomLower() {
