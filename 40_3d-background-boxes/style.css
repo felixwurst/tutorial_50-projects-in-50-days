@@ -71,7 +71,7 @@ body {
   transition: 0.4s ease;
 }
 
-.box::after {
+.box::before {
   content: '';
   background-color: #f6e58d;
   position: absolute;
@@ -82,7 +82,7 @@ body {
   transform: skewY(45deg);
 }
 
-.box::before {
+.box::after {
   content: '';
   background-color: #f9ca24;
   position: absolute;
