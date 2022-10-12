@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+:root {
+  --thumb-width: 24px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -50,6 +54,8 @@ input[type='range'] + label {
 
 /* Chrome & Safari */
 input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
   background: purple;
   border-radius: 4px;
   width: 100%;
@@ -61,8 +67,8 @@ input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   background: #fff;
-  height: 24px;
-  width: 24px;
+  height: var(--thumb-width);
+  width: var(--thumb-width);
   border-radius: 50%;
   border: 1px solid purple;
   margin-top: -7px;
@@ -71,6 +77,8 @@ input[type='range']::-webkit-slider-thumb {
 
 /* Firefox */
 input[type='range']::-moz-range-track {
+  -webkit-appearance: none;
+  appearance: none;
   background: purple;
   border-radius: 4px;
   width: 100%;
@@ -82,8 +90,8 @@ input[type='range']::-moz-range-thumb {
   -webkit-appearance: none;
   appearance: none;
   background: #fff;
-  height: 24px;
-  width: 24px;
+  height: var(--thumb-width);
+  width: var(--thumb-width);
   border-radius: 50%;
   border: 1px solid purple;
   margin-top: -7px;
@@ -92,6 +100,8 @@ input[type='range']::-moz-range-thumb {
 
 /* IE */
 input[type='range']::-ms-track {
+  -webkit-appearance: none;
+  appearance: none;
   background: purple;
   border-radius: 4px;
   width: 100%;
@@ -103,8 +113,8 @@ input[type='range']::-ms-thumb {
   -webkit-appearance: none;
   appearance: none;
   background: #fff;
-  height: 24px;
-  width: 24px;
+  height: var(--thumb-width);
+  width: var(--thumb-width);
   border-radius: 50%;
   border: 1px solid purple;
   margin-top: -7px;
